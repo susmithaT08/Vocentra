@@ -17,7 +17,7 @@ const allowedOrigins = process.env.CORS_ORIGIN
     : ['http://localhost:3000', 'http://127.0.0.1:3000'];
 
 app.use(cors({
-    origin: function(origin, callback) {
+    origin: function (origin, callback) {
         // Allow requests with no origin (mobile apps, curl, etc.)
         if (!origin) return callback(null, true);
         // In development, allow all localhost/LAN origins
@@ -101,7 +101,7 @@ const PORT = process.env.PORT || 5000;
 
 const startServer = async () => {
     await connectDB();
-    await seedData();
+    // await seedData();//
     app.listen(PORT, () => {
         console.log(`Server running in ${process.env.NODE_ENV || 'development'} mode on port ${PORT}`);
     });
