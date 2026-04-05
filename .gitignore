@@ -1,0 +1,40 @@
+# Dependencies
+node_modules/
+
+# Environment variables (SECRETS - never commit!)
+.env
+.env.local
+
+# Build output
+.next/
+out/
+dist/
+build/
+
+# Logs
+*.log
+error.log
+crash.log
+
+# Debug/test files
+backend/api_output.json
+backend/api_response.json
+backend/error.json
+backend/error_log.txt
+backend/out.log
+backend/testOutput.txt
+backend/testResult.txt
+backend/test_out.txt
+backend/models.json
+backend/models_list.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Vocentra HTML export
+vocentra.html
